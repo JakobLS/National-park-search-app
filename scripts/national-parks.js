@@ -49,12 +49,12 @@ function generateOutputString(outputList) {
 function displayResults(responseJson) {
     // Function for displaying the results in the DOM
     const cleanedResponse = cleanResponse(responseJson.data);
-    console.log(cleanedResponse);
     if (cleanedResponse.length > 0) {
         const outputStr = generateOutputString(cleanedResponse);
         $('.js-output-section').html(outputStr);
-    } 
-    throw new Error("Could not find any results. Please try another search term.")
+    } else {
+        throw new Error("Could not find any results. Please try another search term.");
+    };
 }
 
 function getNationalParkHandle(url) {
