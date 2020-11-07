@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Adding descriptive info and image for sharing -->
+    <meta name="description" content="Search for National Parks and retreive their information.">
+    <meta property="og:image" content="https://www.nps.gov/common/uploads/grid_builder/grte/crop16_9/3EFBC7DB-A402-1E61-7F87EB0E538BE9BF.jpg?width=307&quality=90&mode=crop">
+
+    <title>Search National parks</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito&display=swap">
+    <link rel="stylesheet" href="styles/national-parks.css" type="text/css">
+</head>
+<body>
+    <main>
+        <div class="header center">
+            <h1>Search National Parks</h1>
+        </div>
+        <div class="main-section">
+            <div class="top-section">
+                <div class="input-section center">
+                    <form id="js-search-form">
+                        <input id="search-term" class="js-search-entry" type="text" autofocus="on" placeholder="Search term">
+                        <input type="number" name="max-results" id="js-max-results" value="10">
+                        <button type="submit" class="btn js-search-btn">Search</button>
+                    </form>
+                </div>
+            </div>
+            <div class="bottom-section">
+                <div class="output-section js-output-section">
+                </div>
+            </div>
+        </div>
+    </main>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="module" src="scripts/national-parks.js"></script>
+</body>
+</html>
+
